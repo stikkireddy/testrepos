@@ -1,0 +1,25 @@
+{
+    "num_workers": 3,
+    "cluster_name": "sri-demo",
+    "spark_version": "8.3.x-scala2.12",
+    "spark_conf": {},
+    "aws_attributes": {
+        "first_on_demand": 1,
+        "availability": "SPOT_WITH_FALLBACK",
+        "zone_id": "us-west-2a",
+        "spot_bid_price_percent": 100,
+        "ebs_volume_count": 0
+    },
+    "node_type_id": "i3.xlarge",
+    "driver_node_type_id": "i3.xlarge",
+    "ssh_public_keys": [],
+    "custom_tags": {},
+    "spark_env_vars": {
+        "WSFS_ENABLE": "true",
+        "PYSPARK_PYTHON": "/databricks/python3/bin/python3"
+    },
+    "autotermination_minutes": 120,
+    "enable_elastic_disk": false,
+    "cluster_source": "UI",
+    "init_scripts": [],
+}
